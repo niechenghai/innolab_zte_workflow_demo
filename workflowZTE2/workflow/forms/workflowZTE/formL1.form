@@ -65,6 +65,16 @@
                             "constraints": {
                                 "required": false
                             }
+                        },
+                        {
+                            "id": "attachPic",
+                            "type": "string",
+                            "label": "营业执照图片Link",
+                            "readOnly": true,
+                            "value": "${context.BPInfo.Attachment}",
+                            "constraints": {
+                                "required": false
+                            }
                         }
                     ]
                 },

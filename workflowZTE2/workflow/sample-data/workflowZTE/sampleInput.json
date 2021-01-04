@@ -1,33 +1,223 @@
 {
+    "gtsResult": "Pass",
     "BPInfo": {
         "PartnerProgramCode": "PG01",
         "PartnerTypeCode": "T001",
-        "CompanyName": "company-name",
-        "Address": "company-address",
-        "City": "beijing",
-        "Country": "CN",
-        "PostalCode": "100",
-        "CompanyPhone": "12345678",
-        "CompanyEmail": "test@test.com",
-        "CompanyWebAddress": "www.baidu.com",
-        "PrimaryCommunicationLanguage": "EN",
-        "VatRegistrationNumber": "",
-        "DUNSNumber": "012323445",
-        "PartnerContactSalutation": "0001",
-        "PartnerContactJobTitle": "2ww",
-        "PartnerContactPreferredLanguage": "EN",
-        "PartnerContactFirstName": "Chenghai",
-        "PartnerContactLastName": "Nie",
-        "PartnerContactEmail": "chenghai.nie@sap.com",
-        "PartnerContactPhone": "122222",
-        "AddressIndicator": true,
-        "PartnerContactPostalCode": "",
-        "PartnerContactAddress": "",
-        "PartnerContactCountry": "",
-        "PartnerContactCity": "",
-        "YearFounded": "2011",
-        "NumberOfCustomers": 100,
-        "NumberOfEmployees": 200
+        "CompanyName": "",
+        "EngineerCount": "201",
+        "Capital": "200000",
+        "products": [
+            {
+                "__metadata": {
+                    "uri": "https://my500747.c4c.saphybriscloud.cn/sap/c4c/odata/v1/c4codataapi/ProductCollection('00163E0946E81ED4B2AD1673EFEA0877')",
+                    "type": "c4codata.Product",
+                    "etag": "W/\"datetimeoffset'2020-09-14T08%3A01%3A45.5821650Z'\""
+                },
+                "ObjectID": "00163E0946E81ED4B2AD1673EFEA0877",
+                "ProductID": "P100114",
+                "UUID": "00163E09-46E8-1ED4-B2AD-1673EFEA0877",
+                "Language": "ZH",
+                "LanguageText": "中文",
+                "Description": "金属-4",
+                "ProductCategoryID": "CUSTOMER-39",
+                "Status": "2",
+                "StatusText": "有效",
+                "Usage": "",
+                "UsageText": "",
+                "Division": "",
+                "DivisionText": "",
+                "BaseUOM": "EA",
+                "BaseUOMText": "个",
+                "CreatedBy": "Eddie Smoke",
+                "LastChangedBy": "Eddie Smoke",
+                "CreatedOn": "2015-03-13T10:07:06.033Z",
+                "LastChangedOn": "2020-09-14T08:01:45.582Z",
+                "EntityLastChangedOn": "2020-09-14T08:01:45.582Z",
+                "ETag": "2020-09-14T08:01:45.582Z",
+                "ZMAT_BRAND_KUT": "",
+                "ZMAT_CHASSIS_KUT": "",
+                "ZMAT_HQMODEL_KUT": "",
+                "ZMAT_MODEL_KUT": "",
+                "ZMAT_PID_KUT": "",
+                "ZMAT_PRDSERIES_KUT": "",
+                "ZMAT_ProMethod_KUT": "",
+                "ZMAT_RESOLUTION_KUT": "",
+                "ZMAT_SAPCode_KUT": "",
+                "ZMAT_SIZE_KUT": "",
+                "ZMAT_SMART_KUT": "",
+                "ProductAttachmentFolder": {
+                    "__deferred": {
+                        "uri": "https://my500747.c4c.saphybriscloud.cn/sap/c4c/odata/v1/c4codataapi/ProductCollection('00163E0946E81ED4B2AD1673EFEA0877')/ProductAttachmentFolder"
+                    }
+                },
+                "ProductOtherDescriptions": {
+                    "__deferred": {
+                        "uri": "https://my500747.c4c.saphybriscloud.cn/sap/c4c/odata/v1/c4codataapi/ProductCollection('00163E0946E81ED4B2AD1673EFEA0877')/ProductOtherDescriptions"
+                    }
+                },
+                "ProductPlantParty": {
+                    "__deferred": {
+                        "uri": "https://my500747.c4c.saphybriscloud.cn/sap/c4c/odata/v1/c4codataapi/ProductCollection('00163E0946E81ED4B2AD1673EFEA0877')/ProductPlantParty"
+                    }
+                },
+                "ProductQuantityCharacteristics": {
+                    "__deferred": {
+                        "uri": "https://my500747.c4c.saphybriscloud.cn/sap/c4c/odata/v1/c4codataapi/ProductCollection('00163E0946E81ED4B2AD1673EFEA0877')/ProductQuantityCharacteristics"
+                    }
+                },
+                "ProductQuantityConversion": {
+                    "__deferred": {
+                        "uri": "https://my500747.c4c.saphybriscloud.cn/sap/c4c/odata/v1/c4codataapi/ProductCollection('00163E0946E81ED4B2AD1673EFEA0877')/ProductQuantityConversion"
+                    }
+                },
+                "ProductSalesProcessInformation": {
+                    "__deferred": {
+                        "uri": "https://my500747.c4c.saphybriscloud.cn/sap/c4c/odata/v1/c4codataapi/ProductCollection('00163E0946E81ED4B2AD1673EFEA0877')/ProductSalesProcessInformation"
+                    }
+                },
+                "ProductSkill": {
+                    "__deferred": {
+                        "uri": "https://my500747.c4c.saphybriscloud.cn/sap/c4c/odata/v1/c4codataapi/ProductCollection('00163E0946E81ED4B2AD1673EFEA0877')/ProductSkill"
+                    }
+                },
+                "ProductTextCollection": {
+                    "__deferred": {
+                        "uri": "https://my500747.c4c.saphybriscloud.cn/sap/c4c/odata/v1/c4codataapi/ProductCollection('00163E0946E81ED4B2AD1673EFEA0877')/ProductTextCollection"
+                    }
+                },
+                "ProductlGlobalTradeItemNumber": {
+                    "__deferred": {
+                        "uri": "https://my500747.c4c.saphybriscloud.cn/sap/c4c/odata/v1/c4codataapi/ProductCollection('00163E0946E81ED4B2AD1673EFEA0877')/ProductlGlobalTradeItemNumber"
+                    }
+                }
+            }
+        ],
+        "PartnerContactEmail": "chenghai.nie@outlook.com",
+        "ObjectID": "00163EAE80DF1EEB9180D3C16C29146F",
+        "Attachment": "https://69c77e7atrial-dev-zteblacklist-srv.cfapps.eu10.hana.ondemand.com/blacklist/Medias('test')/content",
+        "AttachmentName": "littleBugs.jpg"
     },
-    "gtsResult":"Pass"
+    "displayData": {
+        "PartnerProgramCode": "PG01",
+        "PartnerTypeCode": "T001",
+        "CompanyName": "",
+        "EngineerCount": "201",
+        "Capital": "200000",
+        "products": [
+            {
+                "__metadata": {
+                    "uri": "https://my500747.c4c.saphybriscloud.cn/sap/c4c/odata/v1/c4codataapi/ProductCollection('00163E0946E81ED4B2AD1673EFEA0877')",
+                    "type": "c4codata.Product",
+                    "etag": "W/\"datetimeoffset'2020-09-14T08%3A01%3A45.5821650Z'\""
+                },
+                "ObjectID": "00163E0946E81ED4B2AD1673EFEA0877",
+                "ProductID": "P100114",
+                "UUID": "00163E09-46E8-1ED4-B2AD-1673EFEA0877",
+                "Language": "ZH",
+                "LanguageText": "中文",
+                "Description": "金属-4",
+                "ProductCategoryID": "CUSTOMER-39",
+                "Status": "2",
+                "StatusText": "有效",
+                "Usage": "",
+                "UsageText": "",
+                "Division": "",
+                "DivisionText": "",
+                "BaseUOM": "EA",
+                "BaseUOMText": "个",
+                "CreatedBy": "Eddie Smoke",
+                "LastChangedBy": "Eddie Smoke",
+                "CreatedOn": "2015-03-13T10:07:06.033Z",
+                "LastChangedOn": "2020-09-14T08:01:45.582Z",
+                "EntityLastChangedOn": "2020-09-14T08:01:45.582Z",
+                "ETag": "2020-09-14T08:01:45.582Z",
+                "ZMAT_BRAND_KUT": "",
+                "ZMAT_CHASSIS_KUT": "",
+                "ZMAT_HQMODEL_KUT": "",
+                "ZMAT_MODEL_KUT": "",
+                "ZMAT_PID_KUT": "",
+                "ZMAT_PRDSERIES_KUT": "",
+                "ZMAT_ProMethod_KUT": "",
+                "ZMAT_RESOLUTION_KUT": "",
+                "ZMAT_SAPCode_KUT": "",
+                "ZMAT_SIZE_KUT": "",
+                "ZMAT_SMART_KUT": "",
+                "ProductAttachmentFolder": {
+                    "__deferred": {
+                        "uri": "https://my500747.c4c.saphybriscloud.cn/sap/c4c/odata/v1/c4codataapi/ProductCollection('00163E0946E81ED4B2AD1673EFEA0877')/ProductAttachmentFolder"
+                    }
+                },
+                "ProductOtherDescriptions": {
+                    "__deferred": {
+                        "uri": "https://my500747.c4c.saphybriscloud.cn/sap/c4c/odata/v1/c4codataapi/ProductCollection('00163E0946E81ED4B2AD1673EFEA0877')/ProductOtherDescriptions"
+                    }
+                },
+                "ProductPlantParty": {
+                    "__deferred": {
+                        "uri": "https://my500747.c4c.saphybriscloud.cn/sap/c4c/odata/v1/c4codataapi/ProductCollection('00163E0946E81ED4B2AD1673EFEA0877')/ProductPlantParty"
+                    }
+                },
+                "ProductQuantityCharacteristics": {
+                    "__deferred": {
+                        "uri": "https://my500747.c4c.saphybriscloud.cn/sap/c4c/odata/v1/c4codataapi/ProductCollection('00163E0946E81ED4B2AD1673EFEA0877')/ProductQuantityCharacteristics"
+                    }
+                },
+                "ProductQuantityConversion": {
+                    "__deferred": {
+                        "uri": "https://my500747.c4c.saphybriscloud.cn/sap/c4c/odata/v1/c4codataapi/ProductCollection('00163E0946E81ED4B2AD1673EFEA0877')/ProductQuantityConversion"
+                    }
+                },
+                "ProductSalesProcessInformation": {
+                    "__deferred": {
+                        "uri": "https://my500747.c4c.saphybriscloud.cn/sap/c4c/odata/v1/c4codataapi/ProductCollection('00163E0946E81ED4B2AD1673EFEA0877')/ProductSalesProcessInformation"
+                    }
+                },
+                "ProductSkill": {
+                    "__deferred": {
+                        "uri": "https://my500747.c4c.saphybriscloud.cn/sap/c4c/odata/v1/c4codataapi/ProductCollection('00163E0946E81ED4B2AD1673EFEA0877')/ProductSkill"
+                    }
+                },
+                "ProductTextCollection": {
+                    "__deferred": {
+                        "uri": "https://my500747.c4c.saphybriscloud.cn/sap/c4c/odata/v1/c4codataapi/ProductCollection('00163E0946E81ED4B2AD1673EFEA0877')/ProductTextCollection"
+                    }
+                },
+                "ProductlGlobalTradeItemNumber": {
+                    "__deferred": {
+                        "uri": "https://my500747.c4c.saphybriscloud.cn/sap/c4c/odata/v1/c4codataapi/ProductCollection('00163E0946E81ED4B2AD1673EFEA0877')/ProductlGlobalTradeItemNumber"
+                    }
+                }
+            }
+        ],
+        "PartnerContactEmail": "chenghai.nie@outlook.com",
+        "ObjectID": "00163EAE80DF1EEB9180D3C16C29146F",
+        "Attachment": "https://69c77e7atrial-dev-zteblacklist-srv.cfapps.eu10.hana.ondemand.com/blacklist/Medias('test')/content",
+        "AttachmentName": "littleBugs.jpg"
+    },
+    "postData": {
+        "partnerObjectID": "00163EAE80DF1EEB9180D3C16C29146F",
+        "partner": {
+            "NumberofEmployeeContent_KUT": "201",
+            "NumberofCapitalContent_KUT": "200000"
+        },
+        "program": {
+            "ParentObjectID": "00163EAE80DF1EEB9180D3C16C29146F",
+            "PartnerType": "T001",
+            "PartnerProgram": "PG01",
+            "AgreementEndDate": "2099-12-15T00:00:00",
+            "AgreementStartDate": "2018-12-15T00:00:00"
+        },
+        "product": {
+            "ParentObjectID": null,
+            "EndDate": "2021-12-04T00:00:00",
+            "ProductID": "P100114",
+            "StartDate": "2019-12-04T00:00:00"
+        },
+        "attachment": {
+            "TypeCode": "10001",
+            "Name": "littleBugs.jpg",
+            "CategoryCode": "3",
+            "LinkWebURI": "https://69c77e7atrial-dev-zteblacklist-srv.cfapps.eu10.hana.ondemand.com/blacklist/Medias('test')/content"
+        }
+    }
 }
