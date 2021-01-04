@@ -1,0 +1,84 @@
+_schema-version: "3.2"
+ID: zteui5
+version: 0.0.1
+modules:
+- name: zteui5-destination-content
+  type: com.sap.application.content
+  requires:
+  - name: zteui5-destination-service
+    parameters:
+      content-target: true
+  - name: zteui5_html_repo_host
+    parameters:
+      service-key:
+        name: zteui5_html_repo_host-key
+  - name: uaa_zteui5
+    parameters:
+      service-key:
+        name: uaa_zteui5-key
+  parameters:
+    content:
+      instance:
+        destinations:
+        - Name: zteworkflowui5_zteui5_html_repo_host
+          ServiceInstanceName: zteui5-html5-app-host-service
+          ServiceKeyName: zteui5_html_repo_host-key
+          sap.cloud.service: zteworkflowui5
+        - Authentication: OAuth2UserTokenExchange
+          Name: zteworkflowui5_uaa_zteui5
+          ServiceInstanceName: zteui5-xsuaa-service
+          ServiceKeyName: uaa_zteui5-key
+          sap.cloud.service: zteworkflowui5
+        existing_destinations_policy: ignore
+  build-parameters:
+    no-source: true
+- name: zteui5_ui_deployer
+  type: com.sap.application.content
+  path: .
+  requires:
+  - name: zteui5_html_repo_host
+    parameters:
+      content-target: true
+  build-parameters:
+    build-result: resources
+    requires:
+    - artifacts:
+      - HTML5Module-content.zip
+      name: HTML5Module
+      target-path: resources/
+- name: HTML5Module
+  type: html5
+  path: HTML5Module
+  build-parameters:
+    builder: custom
+    commands:
+    - npm run build
+    supported-platforms: []
+resources:
+- name: zteui5-destination-service
+  type: org.cloudfoundry.managed-service
+  parameters:
+    config:
+      HTML5Runtime_enabled: true
+      version: 1.0.0
+    service: destination
+    service-name: zteui5-destination-service
+    service-plan: lite
+- name: zteui5_html_repo_host
+  type: org.cloudfoundry.managed-service
+  parameters:
+    service: html5-apps-repo
+    service-name: zteui5-html5-app-host-service
+    service-plan: app-host
+- name: uaa_zteui5
+  type: org.cloudfoundry.managed-service
+  parameters:
+    path: ./xs-security.json
+    service: xsuaa
+    service-name: zteui5-xsuaa-service
+    service-plan: application
+build-parameters:
+  before-all:
+  - builder: custom
+    commands:
+    - npm install
