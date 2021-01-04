@@ -154,7 +154,7 @@
 		"8833af50-3ee2-466f-882d-68f50e6c74c5": {
 			"classDefinition": "com.sap.bpm.wfs.UserTask",
 			"subject": "渠道总监：审核注册资料规范性",
-			"priority": "HIGH",
+			"priority": "MEDIUM",
 			"isHiddenInLogForParticipant": false,
 			"userInterface": "sapui5://comsapbpmworkflow.comsapbpmwusformplayer/com.sap.bpm.wus.form.player",
 			"recipientUsers": "${context.approvalUser.director}, ${info.startedBy}",
