@@ -1,0 +1,33 @@
+{
+    "BPInfo": {
+        "PartnerProgramCode": "PG01",
+        "PartnerTypeCode": "T001",
+        "CompanyName": "company-name",
+        "Address": "company-address",
+        "City": "beijing",
+        "Country": "CN",
+        "PostalCode": "100",
+        "CompanyPhone": "12345678",
+        "CompanyEmail": "test@test.com",
+        "CompanyWebAddress": "www.baidu.com",
+        "PrimaryCommunicationLanguage": "EN",
+        "VatRegistrationNumber": "",
+        "DUNSNumber": "012323445",
+        "PartnerContactSalutation": "0001",
+        "PartnerContactJobTitle": "2ww",
+        "PartnerContactPreferredLanguage": "EN",
+        "PartnerContactFirstName": "Chenghai",
+        "PartnerContactLastName": "Nie",
+        "PartnerContactEmail": "chenghai.nie@sap.com",
+        "PartnerContactPhone": "122222",
+        "AddressIndicator": true,
+        "PartnerContactPostalCode": "",
+        "PartnerContactAddress": "",
+        "PartnerContactCountry": "",
+        "PartnerContactCity": "",
+        "YearFounded": "2011",
+        "NumberOfCustomers": 100,
+        "NumberOfEmployees": 200
+    },
+    "gtsResult":"Pass"
+}

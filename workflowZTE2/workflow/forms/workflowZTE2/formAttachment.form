@@ -1,0 +1,33 @@
+{
+    "id": "formattachment",
+    "schemaVersion": "1.1.0",
+    "name": "formAttachment",
+    "revision": "1.0",
+    "type": "task",
+    "readOnly": false,
+    "content": [
+        {
+            "id": "CompanyName1",
+            "type": "string",
+            "label": "客户名称",
+            "readOnly": true,
+            "value": "${context.BPInfo.CompanyName}",
+            "constraints": {
+                "required": false
+            }
+        }
+    ],
+    "decisions": [
+        {
+            "id": "pass1",
+            "text": "完成",
+            "decisionType": "positive"
+        },
+        {
+            "id": "deny1",
+            "text": "退回",
+            "decisionType": "negative"
+        }
+    ],
+    "attachments": {}
+}

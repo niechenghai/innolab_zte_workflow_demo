@@ -1,0 +1,14 @@
+_schema-version: "3.2"
+ID: workflowZTE2
+version: 0.0.1
+modules:
+  - name: workflow
+    type: com.sap.application.content
+    path: workflow
+    requires:
+      - name: wm_workflow
+        parameters:
+          content-target: true
+resources:
+  - name: wm_workflow
+    type: org.cloudfoundry.existing-service

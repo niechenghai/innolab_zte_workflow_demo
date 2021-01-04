@@ -1,0 +1,141 @@
+{
+    "id": "forml1",
+    "schemaVersion": "1.1.0",
+    "name": "formL1",
+    "revision": "v1",
+    "type": "task",
+    "readOnly": false,
+    "content": [
+        {
+            "id": "BPInfo",
+            "type": "section",
+            "title": "企业基本信息",
+            "content": [
+                {
+                    "id": "_",
+                    "type": "subsection",
+                    "title": "申报信息",
+                    "content": [
+                        {
+                            "id": "CompanyName",
+                            "type": "string",
+                            "label": "企业名称",
+                            "readOnly": true,
+                            "value": "${context.BPInfo.CompanyName}",
+                            "constraints": {
+                                "required": false
+                            }
+                        },
+                        {
+                            "id": "Address",
+                            "type": "string",
+                            "label": "企业地址",
+                            "readOnly": true,
+                            "value": "${context.BPInfo.Address}",
+                            "constraints": {
+                                "required": false
+                            }
+                        },
+                        {
+                            "id": "City",
+                            "type": "string",
+                            "label": "所在城市",
+                            "readOnly": true,
+                            "value": "${context.BPInfo.City}",
+                            "constraints": {
+                                "required": false
+                            }
+                        },
+                        {
+                            "id": "CompanyPhone",
+                            "type": "string",
+                            "label": "企业联系方式",
+                            "readOnly": true,
+                            "value": "${context.BPInfo.CompanyPhone}",
+                            "constraints": {
+                                "required": false
+                            }
+                        },
+                        {
+                            "id": "DUNSNumber",
+                            "type": "string",
+                            "label": "DUNS号码",
+                            "readOnly": true,
+                            "value": "${context.BPInfo.DUNSNumber}",
+                            "constraints": {
+                                "required": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "gts_",
+                    "type": "subsection",
+                    "title": "GTS检查结果",
+                    "content": [
+                        {
+                            "id": "gts_",
+                            "type": "string",
+                            "label": "GTS黑名单",
+                            "readOnly": true,
+                            "value": "${context.gtsResult}",
+                            "constraints": {
+                                "required": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "_",
+            "type": "section",
+            "title": "联系人基本信息",
+            "content": [
+                {
+                    "id": "PartnerContactFirstName",
+                    "type": "string",
+                    "label": "联系人姓名",
+                    "readOnly": true,
+                    "value": "${context.BPInfo.PartnerContactFirstName}",
+                    "constraints": {
+                        "required": false
+                    }
+                },
+                {
+                    "id": "PartnerContactPhone",
+                    "type": "string",
+                    "label": "联系人电话",
+                    "readOnly": true,
+                    "value": "${context.BPInfo.PartnerContactPhone}",
+                    "constraints": {
+                        "required": false
+                    }
+                },
+                {
+                    "id": "PartnerContactEmail",
+                    "type": "string",
+                    "label": "联系人邮箱",
+                    "readOnly": true,
+                    "value": "${context.BPInfo.PartnerContactEmail}",
+                    "constraints": {
+                        "required": false
+                    }
+                }
+            ]
+        }
+    ],
+    "decisions": [
+        {
+            "id": "l1Decision_Positive",
+            "text": "注册资料规范：通过",
+            "decisionType": "positive"
+        },
+        {
+            "id": "l1Decision_Nagetive",
+            "text": "退回补全",
+            "decisionType": "negative"
+        }
+    ],
+    "attachments": {}
+}
