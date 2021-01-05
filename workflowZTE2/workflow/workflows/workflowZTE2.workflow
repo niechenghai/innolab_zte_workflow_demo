@@ -1145,7 +1145,7 @@
 					"name": "会签部门部长是否需要"
 				},
 				"f197c6d8-a6c9-43a7-9051-d1ab8ab9e300": {
-					"name": "渠道总监上传附件"
+					"name": "渠道总监上传附件2"
 				},
 				"73cd5ca4-f3d1-4e72-8ebb-12058994565e": {
 					"name": "创建附件"
@@ -1286,7 +1286,7 @@
 			"recipientUsers": "${context.approvalUser.director}, ${info.startedBy}",
 			"userInterfaceParams": [],
 			"id": "usertask6",
-			"name": "渠道总监上传附件"
+			"name": "渠道总监上传附件2"
 		},
 		"73cd5ca4-f3d1-4e72-8ebb-12058994565e": {
 			"classDefinition": "com.sap.bpm.wfs.ServiceTask",
