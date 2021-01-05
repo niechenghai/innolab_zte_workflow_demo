@@ -22,7 +22,7 @@ sap.ui.define([
                 var oModel = new JSONModel({
                     "uploadPath": sRootPath + "/blacklist/Medias('test01')/content"
                 });
-                this.setModel(oModel, "upload");
+                this.getView().setModel(oModel, "upload");
             },
 
             handleUploadPress: function() {
@@ -57,9 +57,11 @@ sap.ui.define([
                         "CategoryCode": "3",
                         "LinkWebURI": imagePath
                     };
+
+                    this.getOwnerComponent().getModel("context").setProperty("formAttachment", attachment);
                    
                 } else {
-                    this.Model.setProperty("/PartnerData/Attachment", null);
+                    this.getOwnerComponent().getModel("context").setProperty("formAttachment", null);
                 }
                 var sMsg = "Return Code: " + status + "  " + (status === 204 ? "Upload Success" : "Upload Error");
                 MessageToast.show(sMsg);
