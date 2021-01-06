@@ -1,7 +1,7 @@
 {
-    "id": "forml1",
+    "id": "forml2",
     "schemaVersion": "1.1.0",
-    "name": "formL1",
+    "name": "formL2",
     "revision": "v1",
     "type": "task",
     "readOnly": false,
@@ -62,16 +62,6 @@
                             "label": "DUNS号码",
                             "readOnly": true,
                             "value": "${context.BPInfo.DUNSNumber}",
-                            "constraints": {
-                                "required": false
-                            }
-                        },
-                        {
-                            "id": "AttachZhizhao",
-                            "type": "string",
-                            "label": "营业执照",
-                            "readOnly": false,
-                            "value": "${context.BPInfo.attachment.LinkWebURI}",
                             "constraints": {
                                 "required": false
                             }

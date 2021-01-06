@@ -1,0 +1,1 @@
+$.context.BPInfo.Decision1 = $.usertasks.usertask1.last.decision;

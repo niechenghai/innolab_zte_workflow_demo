@@ -16,5 +16,5 @@ var rulesPayload = {
 };
 $.context.rulesPayload = rulesPayload;
 
-delete $.context.BPInfo.PartnerOnboardingIndustry.DefaultIndicator;
+
 /*for Demo, Mock Data*/

@@ -1,0 +1,63 @@
+{
+    "id": "assignbizmanager",
+    "schemaVersion": "1.1.0",
+    "name": "assignBizManager",
+    "revision": "1.0",
+    "type": "task",
+    "readOnly": false,
+    "content": [
+        {
+            "id": "_",
+            "type": "section",
+            "title": "指派业务经理",
+            "content": [
+                {
+                    "id": "assignmgr",
+                    "type": "string",
+                    "label": "指派业务经理",
+                    "readOnly": false,
+                    "value": "${context.approver}",
+                    "control": {
+                        "type": "Dropdown",
+                        "properties": {
+                            "items": [
+                                {
+                                    "value": "chenghai.nie@sap.com",
+                                    "displayValue": "业务经理1"
+                                },
+                                {
+                                    "value": "han.yu@sap.com",
+                                    "displayValue": "业务经理2"
+                                },
+                                {
+                                    "value": "volomander@163.com",
+                                    "displayValue": "业务经理3"
+                                }
+                            ]
+                        }
+                    },
+                    "constraints": {
+                        "required": true,
+                        "enum": [
+                            "chenghai.nie@sap.com",
+                            "han.yu@sap.com",
+                            "volomander@163.com"
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "decisions": [
+        {
+            "id": "decisionApproval",
+            "text": "分派工作",
+            "decisionType": "positive"
+        },
+        {
+            "id": "decline",
+            "text": "退回",
+            "decisionType": ""
+        }
+    ]
+}

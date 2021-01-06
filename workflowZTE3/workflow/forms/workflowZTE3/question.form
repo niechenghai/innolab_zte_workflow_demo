@@ -1,0 +1,69 @@
+{
+    "id": "question",
+    "schemaVersion": "1.1.0",
+    "name": "question",
+    "revision": "1.0",
+    "type": "task",
+    "readOnly": false,
+    "content": [
+        {
+            "id": "BPInfo",
+            "type": "section",
+            "title": "渠道信息",
+            "content": [
+                {
+                    "id": "name",
+                    "type": "string",
+                    "label": "公司名称",
+                    "readOnly": false,
+                    "value": "${context.BPInfo.CompanyName}",
+                    "constraints": {
+                        "required": false
+                    }
+                },
+                {
+                    "id": "_",
+                    "type": "string",
+                    "label": "公司地址",
+                    "readOnly": false,
+                    "value": "${context.BPInfo.Address}",
+                    "constraints": {
+                        "required": false
+                    }
+                },
+                {
+                    "id": "__1",
+                    "type": "string",
+                    "label": "所在城市",
+                    "readOnly": false,
+                    "value": "${context.BPInfo.City}",
+                    "constraints": {
+                        "required": false
+                    }
+                },
+                {
+                    "id": "crm_",
+                    "type": "string",
+                    "label": "CRM详情页面",
+                    "readOnly": false,
+                    "value": "${context.BPInfo.CRMLink}",
+                    "constraints": {
+                        "required": false
+                    }
+                }
+            ]
+        }
+    ],
+    "decisions": [
+        {
+            "id": "approve",
+            "text": "提交",
+            "decisionType": ""
+        },
+        {
+            "id": "reject",
+            "text": "退回",
+            "decisionType": ""
+        }
+    ]
+}

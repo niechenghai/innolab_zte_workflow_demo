@@ -54,6 +54,9 @@
 				},
 				"e1f3ad29-7c50-436b-ac3d-5fd68a49a3ca": {
 					"name": "渠道总监邮件"
+				},
+				"e9a8e4b3-b004-4ffe-a578-71c7fdc9c547": {
+					"name": "通知渠道商"
 				}
 			},
 			"sequenceFlows": {
@@ -110,6 +113,9 @@
 				},
 				"5a1966ce-8725-4d1e-86be-4b0796f142be": {
 					"name": "SequenceFlow34"
+				},
+				"2d931cc2-fee3-452f-80bd-b76990f1cee1": {
+					"name": "SequenceFlow35"
 				}
 			},
 			"diagrams": {
@@ -301,7 +307,7 @@
 			"id": "sequenceflow14",
 			"name": "SequenceFlow14",
 			"sourceRef": "4614b614-57ac-4562-865d-517afeabf3d7",
-			"targetRef": "2798f4e7-bc42-4fad-a248-159095a2f40a"
+			"targetRef": "e9a8e4b3-b004-4ffe-a578-71c7fdc9c547"
 		},
 		"a4c0c7fb-8caa-4113-94d3-e7b494629584": {
 			"classDefinition": "com.sap.bpm.wfs.SequenceFlow",
@@ -417,7 +423,9 @@
 				"7b06e9a8-7932-4c77-91bd-5b77367facc0": {},
 				"4f57acfb-59af-4c9e-9853-9c9a0974af7e": {},
 				"c3f44635-fc22-40b7-b528-d63fe8f587f0": {},
-				"5f112373-ae76-4ccb-bfd9-b821daee912a": {}
+				"5f112373-ae76-4ccb-bfd9-b821daee912a": {},
+				"3b9c1fec-e9aa-4dff-bc44-e6386900c76b": {},
+				"1f05b06e-1a30-42f0-8a20-308e36770036": {}
 			}
 		},
 		"cfff2a2c-0ada-49a3-8876-68a974c293f8": {
@@ -435,8 +443,8 @@
 		},
 		"53e54950-7757-4161-82c9-afa7e86cff2c": {
 			"classDefinition": "com.sap.bpm.wfs.ui.EndEventSymbol",
-			"x": 1821.9999904632568,
-			"y": 79.5,
+			"x": 2041.9999904632568,
+			"y": 91.5,
 			"width": 35,
 			"height": 35,
 			"object": "2798f4e7-bc42-4fad-a248-159095a2f40a"
@@ -522,7 +530,7 @@
 		},
 		"097890fd-7a65-4136-be7e-161e1963155f": {
 			"classDefinition": "com.sap.bpm.wfs.ui.SequenceFlowSymbol",
-			"points": "1601.9999916553497,114.99999970197678 1636.9999910593033,114.99999970197678 1636.9999910593033,97 1671.9999904632568,97",
+			"points": "1601.9999916553497,111.99999985098839 1738.9999904632568,111.99999985098839",
 			"sourceSymbol": "7bea8c14-ccd0-436c-8b96-f5e952195e88",
 			"targetSymbol": "e85a6a59-087b-4f6c-bea6-14eb38639082",
 			"object": "457e5528-c951-42d6-972f-ce9bf288b620"
@@ -543,22 +551,22 @@
 		},
 		"e85a6a59-087b-4f6c-bea6-14eb38639082": {
 			"classDefinition": "com.sap.bpm.wfs.ui.ServiceTaskSymbol",
-			"x": 1671.9999904632568,
-			"y": 67,
+			"x": 1738.9999904632568,
+			"y": 79,
 			"width": 100,
 			"height": 60,
 			"object": "4614b614-57ac-4562-865d-517afeabf3d7"
 		},
 		"b8ad957e-368b-4a76-ae00-c07b4cc6ad5b": {
 			"classDefinition": "com.sap.bpm.wfs.ui.SequenceFlowSymbol",
-			"points": "1771.9999904632568,97 1821.9999904632568,97",
+			"points": "1788.9999904632568,109 1940.7499904632568,109",
 			"sourceSymbol": "e85a6a59-087b-4f6c-bea6-14eb38639082",
-			"targetSymbol": "53e54950-7757-4161-82c9-afa7e86cff2c",
+			"targetSymbol": "3b9c1fec-e9aa-4dff-bc44-e6386900c76b",
 			"object": "f4c895eb-3308-4f21-b1cf-677d0d769d11"
 		},
 		"f2ccac1b-8c2e-4570-ad40-4481bcc2f72f": {
 			"classDefinition": "com.sap.bpm.wfs.ui.SequenceFlowSymbol",
-			"points": "1431.9999928474426,97 1466.9999922513962,97 1466.9999922513962,49.000000298023224 1636.9999910593033,49.000000298023224 1636.9999910593033,97 1671.9999904632568,97",
+			"points": "1431.9999928474426,97 1585.5,97 1585.5,109 1738.9999904632568,109",
 			"sourceSymbol": "3b77cd7a-3449-427b-9db0-2c4945135442",
 			"targetSymbol": "e85a6a59-087b-4f6c-bea6-14eb38639082",
 			"object": "a4c0c7fb-8caa-4113-94d3-e7b494629584"
@@ -665,14 +673,14 @@
 		},
 		"62d7f4ed-4063-4c44-af8b-39050bd44926": {
 			"classDefinition": "com.sap.bpm.wfs.LastIDs",
-			"maildefinition": 1,
-			"sequenceflow": 34,
+			"maildefinition": 2,
+			"sequenceflow": 35,
 			"startevent": 1,
 			"endevent": 1,
 			"usertask": 4,
 			"servicetask": 3,
 			"scripttask": 3,
-			"mailtask": 1,
+			"mailtask": 2,
 			"exclusivegateway": 5,
 			"parallelgateway": 1
 		},
@@ -683,6 +691,42 @@
 			"subject": "你有一个待审批事项",
 			"text": "请及时审批：https://c9dbba98trial.cockpit.workflowmanagement.cfapps.us10.hana.ondemand.com/cp.portal/site#WorkflowTask-DisplayMyInbox?sap-ui-app-id-hint=cross.fnd.fiori.inbox&substitution=true&userSearch=false",
 			"id": "maildefinition1"
+		},
+		"e9a8e4b3-b004-4ffe-a578-71c7fdc9c547": {
+			"classDefinition": "com.sap.bpm.wfs.MailTask",
+			"id": "mailtask2",
+			"name": "通知渠道商",
+			"mailDefinitionRef": "ec998448-92cd-4599-bbf2-56f8ac58f526"
+		},
+		"3b9c1fec-e9aa-4dff-bc44-e6386900c76b": {
+			"classDefinition": "com.sap.bpm.wfs.ui.MailTaskSymbol",
+			"x": 1890.7499904632568,
+			"y": 79,
+			"width": 100,
+			"height": 60,
+			"object": "e9a8e4b3-b004-4ffe-a578-71c7fdc9c547"
+		},
+		"2d931cc2-fee3-452f-80bd-b76990f1cee1": {
+			"classDefinition": "com.sap.bpm.wfs.SequenceFlow",
+			"id": "sequenceflow35",
+			"name": "SequenceFlow35",
+			"sourceRef": "e9a8e4b3-b004-4ffe-a578-71c7fdc9c547",
+			"targetRef": "2798f4e7-bc42-4fad-a248-159095a2f40a"
+		},
+		"1f05b06e-1a30-42f0-8a20-308e36770036": {
+			"classDefinition": "com.sap.bpm.wfs.ui.SequenceFlowSymbol",
+			"points": "1940.7499904632568,109 2059.499990463257,109",
+			"sourceSymbol": "3b9c1fec-e9aa-4dff-bc44-e6386900c76b",
+			"targetSymbol": "53e54950-7757-4161-82c9-afa7e86cff2c",
+			"object": "2d931cc2-fee3-452f-80bd-b76990f1cee1"
+		},
+		"ec998448-92cd-4599-bbf2-56f8ac58f526": {
+			"classDefinition": "com.sap.bpm.wfs.MailDefinition",
+			"name": "maildefinition2",
+			"to": "chenghai.nie@sap.com",
+			"subject": "【中兴政企】渠道商注册成功",
+			"text": "恭喜！渠道商审批已通过，您可以通过门户Link访问渠道商门户功能：",
+			"id": "maildefinition2"
 		}
 	}
 }

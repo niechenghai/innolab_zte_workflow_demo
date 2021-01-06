@@ -1,0 +1,17 @@
+_schema-version: "3.2"
+ID: workflowZTE3
+version: 0.0.1
+modules:
+  - name: workflow
+    type: com.sap.application.content
+    path: workflow
+    requires:
+      - name: workflow_mta
+        parameters:
+          content-target: true
+resources:
+  - name: workflow_mta
+    parameters:
+      service-plan: lite
+      service: workflow
+    type: org.cloudfoundry.managed-service

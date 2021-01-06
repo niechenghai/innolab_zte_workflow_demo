@@ -30,6 +30,7 @@ $.context.BPInfo.attach = "https://c9dbba98trial-dev-uploadfile-approuter.cfapps
 $.context.BPInfo.attachLink = "https://69c77e7atrial-dev-zteblacklist-srv.cfapps.eu10.hana.ondemand.com/blacklist/Medias('test01')/content";
 $.context.BPInfo.attachYes = false;
 
-
+var attachURL= $.context.BPInfo.attach + "?ObjectID=" + $.context.postData.partnerObjectID;
+$.context.BPInfo.attach = attachURL;
 
 /*for Demo, Mock Data*/

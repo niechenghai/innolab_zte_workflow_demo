@@ -1,0 +1,102 @@
+{
+    "id": "bpinfo",
+    "schemaVersion": "1.1.0",
+    "name": "BPInfo",
+    "revision": "1.0",
+    "type": "task",
+    "readOnly": false,
+    "content": [
+        {
+            "id": "_",
+            "type": "section",
+            "title": "信息填报",
+            "content": [
+                {
+                    "id": "_1",
+                    "type": "string",
+                    "label": "信息1",
+                    "readOnly": false,
+                    "value": "${context.BPInfo.submitInfo1}",
+                    "constraints": {
+                        "required": false
+                    }
+                },
+                {
+                    "id": "_2",
+                    "type": "string",
+                    "label": "信息2",
+                    "readOnly": false,
+                    "value": "${context.BPInfo.submitInfo2}",
+                    "control": {
+                        "type": "TextArea",
+                        "properties": {
+                            "height": "small"
+                        }
+                    },
+                    "constraints": {
+                        "required": false
+                    }
+                },
+                {
+                    "id": "_3",
+                    "type": "string",
+                    "label": "信息3",
+                    "readOnly": false,
+                    "value": "${context.BPInfo.submitInfo3}",
+                    "control": {
+                        "type": "Dropdown",
+                        "properties": {
+                            "items": [
+                                {
+                                    "value": "value1",
+                                    "displayValue": "产品选项1"
+                                },
+                                {
+                                    "value": "value2",
+                                    "displayValue": "产品选项2"
+                                }
+                            ]
+                        }
+                    },
+                    "constraints": {
+                        "required": true,
+                        "enum": [
+                            "value1",
+                            "value2"
+                        ]
+                    }
+                },
+                {
+                    "id": "_4",
+                    "type": "string",
+                    "label": "信息4",
+                    "readOnly": false,
+                    "value": "${context.BPInfo.submitInfo4}",
+                    "control": {
+                        "type": "RadioButtons",
+                        "properties": {
+                            "items": [
+                                {
+                                    "value": "value1",
+                                    "displayValue": "value1"
+                                },
+                                {
+                                    "value": "value2",
+                                    "displayValue": "value2"
+                                }
+                            ]
+                        }
+                    },
+                    "constraints": {
+                        "required": true,
+                        "enum": [
+                            "value1",
+                            "value2"
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "decisions": []
+}
