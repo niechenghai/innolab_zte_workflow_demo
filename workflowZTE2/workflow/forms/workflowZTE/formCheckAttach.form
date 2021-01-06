@@ -65,6 +65,16 @@
                             "constraints": {
                                 "required": false
                             }
+                        },
+                        {
+                            "id": "attachPic",
+                            "type": "string",
+                            "label": "营业执照图片Link",
+                            "readOnly": true,
+                            "value": "${context.BPInfo.Attachment}",
+                            "constraints": {
+                                "required": false
+                            }
                         }
                     ]
                 },
@@ -118,6 +128,23 @@
                     "label": "联系人邮箱",
                     "readOnly": true,
                     "value": "${context.BPInfo.PartnerContactEmail}",
+                    "constraints": {
+                        "required": false
+                    }
+                }
+            ]
+        },
+        {
+            "id": "Result",
+            "type": "section",
+            "title": "审批结果截图",
+            "content": [
+                {
+                    "id": "attachLink",
+                    "type": "string",
+                    "label": "审批结果",
+                    "readOnly": true,
+                    "value": "${context.BPInfo.attachLink}",
                     "constraints": {
                         "required": false
                     }

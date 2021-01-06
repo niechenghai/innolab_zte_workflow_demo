@@ -25,4 +25,11 @@ $.context.postData.path2 = path2;
 
 var path4 = "/PartnerCollection('"+ $.context.postData.partnerObjectID +"')/PartnerAttachment";
 $.context.postData.path4 = path4;
+
+$.context.BPInfo.attach = "https://c9dbba98trial-dev-uploadfile-approuter.cfapps.us10.hana.ondemand.com/nsdemouploadattachment/index.html";
+$.context.BPInfo.attachLink = "https://69c77e7atrial-dev-zteblacklist-srv.cfapps.eu10.hana.ondemand.com/blacklist/Medias('test01')/content";
+$.context.BPInfo.attachYes = false;
+
+
+
 /*for Demo, Mock Data*/
