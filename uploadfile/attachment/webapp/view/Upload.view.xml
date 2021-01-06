@@ -1,0 +1,33 @@
+<mvc:View controllerName="ns.demo.upload.attachment.controller.Upload" 
+    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns:u="sap.ui.unified"
+    displayBlock="true" 
+    xmlns="sap.m">
+
+	
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+                        <HBox width="100%" justifyContent="Center">
+                            <VBox>
+                                <u:FileUploader
+                                    id="fileUploader"
+                                    name="myFileUpload"
+                                    uploadUrl="{upload>/uploadPath}"
+                                    httpRequestMethod="Put"
+                                    sendXHR="true"
+                                    useMultipart="false"
+                                    buttonText="浏览"
+                                    tooltip="Upload your file to the local server"
+                                    uploadComplete="handleUploadComplete"/>
+                                <Button
+                                    text="上传"
+                                    press="handleUploadPress"/>
+                            </VBox>
+                        </HBox>
+                    </content>
+				</Page>
+			</pages>
+		</App>
+</mvc:View>

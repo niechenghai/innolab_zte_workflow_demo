@@ -1,0 +1,16 @@
+{
+  "authenticationMethod": "none",
+  "routes": [
+    {
+        "source": "^/blacklist/(.*)",
+        "target": "/$1",
+        "destination": "zte_blacklist"
+    },
+    {
+      "source": "^(.*)$",
+      "target": "$1",
+      "service": "html5-apps-repo-rt",
+      "authenticationType": "xsuaa"
+    }
+  ]
+}

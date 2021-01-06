@@ -1,0 +1,25 @@
+{
+  "welcomeFile": "/index.html",
+  "authenticationMethod": "none",
+  "logout": {
+    "logoutEndpoint": "/do/logout"
+  },
+  "routes": [
+    {
+        "source": "^/blacklist/(.*)",
+        "target": "/$1",
+        "destination": "zte_blacklist"
+    },
+    {
+        "source": "^/c4cpub2/(.*)",
+        "target": "/$1",
+        "destination": "C4C_Public2"
+    },
+    {
+      "source": "^(.*)$",
+      "target": "$1",
+      "service": "html5-apps-repo-rt",
+      "authenticationType": "xsuaa"
+    }
+  ]
+}
